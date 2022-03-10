@@ -22,6 +22,7 @@ from members.views import member_complete_view
 from members.views import member_login_view
 from members.views import member_logout_view
 from bugs.views import bug_create_view
+from QuoteHistory.views import quote_history_view
 
 urlpatterns = [
     path('', home_view, name='home'),
@@ -31,4 +32,5 @@ urlpatterns = [
     path('complete_account/', member_complete_view, name='complete_account'),
     path('logout/', member_logout_view, name='logout'),
     path('create_bug_report/', bug_create_view, name='create_bug_tracker'),
+    path('quote_history/', quote_history_view, name='quote_history'),
 ]
