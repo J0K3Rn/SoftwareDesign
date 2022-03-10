@@ -8,12 +8,14 @@
 		Hi {{ user.username }}!
 		<p style="text-align: left;">
 			<a href="{% url 'logout' %}">Log Out</a>
+			<a href="{% url 'complete_account' %{\}">Complete Account</a>
 		</p>
 	{% else %}
 		<p style="text-align: left;">You are not logged in
 		<br>
 		<a href="{% url 'login' %}">Log In</a>
 		<a href="{% url 'create_account' %}">Create Account</a>
+		<a href="{% url 'complete_account' %{\}">Complete Account</a>
 		</p>
 	{% endif %}
 

@@ -23,7 +23,7 @@ def member_create_view(request):
 	}
 	return render(request, "members/member_create.html", context)
 
-def member_complete_view(request)
+def member_complete_view(request):
 	my_form = MemberComplete()
 	if request.method == "POST":
 		my_form = MemberComplete(request.POST)
@@ -35,7 +35,7 @@ def member_complete_view(request)
 	context = {
 		"form": my_form
 	}
-	return render(request, "members/member_create.html", context)
+	return render(request, "members/member_complete.html", context)
 
 def member_login_view(request):
 	my_form = MemberLoginForm()

@@ -18,6 +18,7 @@ from django.urls import path, include
 
 from pages.views import home_view
 from members.views import member_create_view
+from members.views import member_complete_view
 from members.views import member_login_view
 from members.views import member_logout_view
 from bugs.views import bug_create_view
@@ -27,6 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('create_account/', member_create_view, name='create_account'),
     path('login/', member_login_view, name='login'),
+    path('complete_account/', member_complete_view, name='complete_account'),
     path('logout/', member_logout_view, name='logout'),
     path('create_bug_report/', bug_create_view, name='create_bug_tracker'),
 ]
