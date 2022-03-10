@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Member(models.Model):
-	id = models.BigAutoField(primary_key=True)
+	pid = models.BigAutoField(primary_key=True)
 	username = models.TextField(max_length=128)
 	password = models.TextField(max_length=128)
 	address_1 = models.CharField(("Address"), max_length=128)

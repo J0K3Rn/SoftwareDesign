@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'pages',
     'members',
     'bugs',
+    'QuoteHistory',
 ]
 
 MIDDLEWARE = [
