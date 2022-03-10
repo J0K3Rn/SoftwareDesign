@@ -41,9 +41,7 @@ INSTALLED_APPS = [
 
     # own
     'pages',
-    'tables',
     'members',
-    'reservations',
     'bugs',
 ]
 
