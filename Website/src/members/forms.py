@@ -2,17 +2,20 @@ from django import forms
 
 from .models import Member
 
-class MemberForm(forms.Form):
-	first_name = forms.CharField()
-	last_name = forms.CharField()
-	email = forms.EmailField()
+class MemberCreate(forms.Form):
+	username = forms.CharField()
 	password = forms.CharField()
-	bill_address = forms.CharField()
-	points = forms.IntegerField()
-	pref_payment = forms.CharField()
+
+class MemberComplete(forms.Form):
+	address_1 = forms.CharField()
+	address_2 = forms.CharField()
+	city = forms.CharField()
+	state = forms.CharField()
+	zip_code = forms.CharField()
+	profit_margin = forms.CharField()
 
 class MemberLoginForm(forms.Form):
-	email = forms.EmailField()
+	username = forms.CharField()
 	password = forms.CharField()
 
 #class MemberGetStats(forms.Form):
